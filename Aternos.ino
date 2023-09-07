@@ -1,9 +1,9 @@
 #include <ESP8266WiFi.h>
 
-const char* ssid = "YourWiFiSSID";
-const char* password = "YourWiFiPassword";
-const char* aternosServer = "Gino980304.aternos.me";
-const int aternosPort = 34137; // Aternos服务器的端口
+const char* ssid = "ASUS_7C";
+const char* password = "98 03 04";
+const char* aternosServer = "Gino980304NewJE.aternos.me.aternos.me";
+const int aternosPort = 38379; // Aternos服务器的端口
 
 const int ledPin = 2; // 控制板载LED的引脚
 
