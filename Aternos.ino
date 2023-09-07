@@ -9,7 +9,7 @@ const int ledPin = 2; // 控制板载LED的引脚
 
 void setup() {
   Serial.begin(115200);
-  pinMode(ledPin, OUTPUT);
+  pinMode(ledPin, 1);
 
   // 连接到WiFi网络
   WiFi.begin(ssid, password);
@@ -41,11 +41,11 @@ void loop() {
         // 检查服务器响应以确定服务器状态
         if (line.indexOf("Server is online") != -1) {
           // 服务器在线，点亮LED
-          digitalWrite(ledPin, HIGH);
+          digitalWrite(ledPin, 0);
           Serial.println("Server is online");
         } else {
           // 服务器不在线，关闭LED
-          digitalWrite(ledPin, LOW);
+          digitalWrite(ledPin, 1);
           Serial.println("Server is offline");
         }
       }
