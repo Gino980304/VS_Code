@@ -28,7 +28,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 }
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
-    static std::wstring password = _T("your_password"); // 設定你的密碼
+    static std::wstring password = _T("Gino980304"); // 設定你的密碼
     static std::wstring drive;
 
     switch (msg) {
